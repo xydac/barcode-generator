@@ -9,5 +9,5 @@ Pass the below parameter in the url to customize
 - value={barcodevalue}
 - labelTop={label for top}
 - labelBottom={label for bottom}
-- rows=10 - number of rows
+- count=10 - count of items
 - column=4 - number of columns

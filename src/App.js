@@ -7,6 +7,8 @@ const BarcodeData = ({ labelTop, labelBottom, value }) => (
       display: "flex",
       flexDirection: "column",
       border: "1px solid #ddd",
+      alignItems: "center",
+      padding: "1rem",
     }}>
     {labelTop}
     <Barcode value={value} />
@@ -19,9 +21,10 @@ function App() {
   const value = queryParams.get("value") || "Barcode";
   const labelTop = queryParams.get("labelTop");
   const labelBottom = queryParams.get("labelBottom");
-  const rows = queryParams.get("rows") || 10;
-  const columns = queryParams.get("columns") || 4;
-  const range = [...Array(rows * columns).keys()];
+  const count = queryParams.get("count") || 10;
+  const columns = queryParams.get("columns") || 3;
+
+  const range = [...Array(1 * count).keys()];
 
   return (
     <div className="App">
