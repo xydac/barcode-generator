@@ -1,6 +1,7 @@
 {
   "name": "arghyaa-barcode-generator",
   "version": "0.1.0",
+  "homepage": "/barcode-generator",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
